@@ -33,9 +33,9 @@ for i=1:Np
         end
     end
 end
-%{
+
 %create defect
-Nd = 18;%num of defects
+Nd = 9;%num of defects
 %mov_ind=zeros(Np,1);
 %b1=zeros(Nd+Np,2);
 %H1=zeros(Nd+Np);
@@ -210,7 +210,7 @@ for i = 1:Np
     end
 end
 %}
-%}
+
 dlmwrite('./connectivity_matrix.txt', H, '\t');
 
 b2(1,1)=Np;
